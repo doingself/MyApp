@@ -12,6 +12,13 @@
 		BD3249BF20F08CE5007FD789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3249BD20F08CE5007FD789 /* Main.storyboard */; };
 		BD3249C120F08CE7007FD789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3249C020F08CE7007FD789 /* Assets.xcassets */; };
 		BD3249C420F08CE7007FD789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3249C220F08CE7007FD789 /* LaunchScreen.storyboard */; };
+		BD3249CC20F08E6F007FD789 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249CB20F08E6F007FD789 /* MainTabBarController.swift */; };
+		BD3249D620F08F12007FD789 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249D520F08F12007FD789 /* CategoryViewController.swift */; };
+		BD3249D820F08F1D007FD789 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249D720F08F1D007FD789 /* HomeViewController.swift */; };
+		BD3249DA20F08F25007FD789 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249D920F08F25007FD789 /* MeViewController.swift */; };
+		BD3249DC20F08F30007FD789 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249DB20F08F30007FD789 /* MessageViewController.swift */; };
+		BD3249DE20F08F4A007FD789 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249DD20F08F4A007FD789 /* PublishViewController.swift */; };
+		BD3249E220F09007007FD789 /* CodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3249E120F09007007FD789 /* CodeUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,14 @@
 		BD3249C020F08CE7007FD789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3249C320F08CE7007FD789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3249C520F08CE7007FD789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3249CB20F08E6F007FD789 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BD3249CD20F08E95007FD789 /* MyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		BD3249D520F08F12007FD789 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BD3249D720F08F1D007FD789 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BD3249D920F08F25007FD789 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		BD3249DB20F08F30007FD789 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		BD3249DD20F08F4A007FD789 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
+		BD3249E120F09007007FD789 /* CodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +71,68 @@
 			children = (
 				BD3249B920F08CE5007FD789 /* AppDelegate.swift */,
 				BD3249BB20F08CE5007FD789 /* ViewController.swift */,
+				BD3249CB20F08E6F007FD789 /* MainTabBarController.swift */,
+				BD3249DD20F08F4A007FD789 /* PublishViewController.swift */,
+				BD3249DF20F08FE6007FD789 /* Librarys */,
+				BD3249E020F08FE6007FD789 /* Utils */,
+				BD3249D320F08EF9007FD789 /* Category */,
+				BD3249D420F08EFA007FD789 /* Home */,
+				BD3249D220F08EF9007FD789 /* Me */,
+				BD3249D120F08EF9007FD789 /* Message */,
 				BD3249BD20F08CE5007FD789 /* Main.storyboard */,
 				BD3249C020F08CE7007FD789 /* Assets.xcassets */,
 				BD3249C220F08CE7007FD789 /* LaunchScreen.storyboard */,
 				BD3249C520F08CE7007FD789 /* Info.plist */,
+				BD3249CD20F08E95007FD789 /* MyApp-Bridging-Header.h */,
 			);
 			path = MyApp;
+			sourceTree = "<group>";
+		};
+		BD3249D120F08EF9007FD789 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				BD3249DB20F08F30007FD789 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		BD3249D220F08EF9007FD789 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				BD3249D920F08F25007FD789 /* MeViewController.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		BD3249D320F08EF9007FD789 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BD3249D520F08F12007FD789 /* CategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BD3249D420F08EFA007FD789 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BD3249D720F08F1D007FD789 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BD3249DF20F08FE6007FD789 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Librarys;
+			sourceTree = "<group>";
+		};
+		BD3249E020F08FE6007FD789 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD3249E120F09007007FD789 /* CodeUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +167,7 @@
 				TargetAttributes = {
 					BD3249B520F08CE4007FD789 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -135,8 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD3249DA20F08F25007FD789 /* MeViewController.swift in Sources */,
+				BD3249D820F08F1D007FD789 /* HomeViewController.swift in Sources */,
+				BD3249D620F08F12007FD789 /* CategoryViewController.swift in Sources */,
+				BD3249CC20F08E6F007FD789 /* MainTabBarController.swift in Sources */,
+				BD3249DE20F08F4A007FD789 /* PublishViewController.swift in Sources */,
 				BD3249BC20F08CE5007FD789 /* ViewController.swift in Sources */,
 				BD3249BA20F08CE5007FD789 /* AppDelegate.swift in Sources */,
+				BD3249DC20F08F30007FD789 /* MessageViewController.swift in Sources */,
+				BD3249E220F09007007FD789 /* CodeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQP5327YF6;
 				INFOPLIST_FILE = MyApp/Info.plist;
@@ -289,6 +369,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.syc.MyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XQP5327YF6;
 				INFOPLIST_FILE = MyApp/Info.plist;
@@ -307,6 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.syc.MyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyApp/MyApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
